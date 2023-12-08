@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+ /* TODO */
+}
+
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  min-height: 100vh;
+}
+
+input {
+  color: #3f87a6;
+  font-weight: 300;
+  background-color: #ebf8e1;
+
+}
+
+.search-container {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+  height: 100vh;
+}
+.search-container input,
+.search-container .suggestions {
+  text-align: center;
+  position: absolute;
+  width: 250px;
+}
+.search-container input {
+  text-align: center;
+  padding: 8px 0;
+  top: calc(50% - 19px);
+  /* background-color: #ebf8e1; */
+  border-color: #ebf8e1;
+}
+.search-container .suggestions {
+  text-align: left;
+  top: calc(50% + 19px);
+  background-color: #ebf8e1;
+  display: none; 
+  /* color: #f69d3c; */
+  border-color: #ebf8e1;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.has-suggestions {
+
+}
+
+
+ul li {
+  font-weight: 300;
+  cursor: pointer;
+  color: #f69d3c;
+  font-weight: 300;
+}
+ul li:hover {
+  color: #3f87a6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+/* when I click on the box, I dont like the blue outline, how to change?
